@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import { styled } from 'styled-components';
 import WebDesing from './WebDesing';
 import Development from './Development';
+import Proyect3 from './Proyect3';
+import GithuP from './GithubP';
 
 
 const data =[
-  'Web Desing',
-  'Development',
-
+  'Champion',
+  'Pokemon',
+  'Proyect 3',
+  'Github'
 ];
 
 const Section = styled.div`
@@ -89,7 +92,7 @@ const Right = styled.div`
 `
 
 const Proyects = () => {
-  const [work, setWork] = useState('Web Desing');
+  const [work, setWork] = useState('Champion');
   return (
     <Section>
         <Container>
@@ -103,11 +106,15 @@ const Proyects = () => {
               </List>
            </Left>
            <Right>
-                {work === 'Web Desing' ? (
+                {work === 'Champion' ? (
                 <WebDesing/>
-                ): (
+                ): work === 'Pokemon' ? (
                 <Development/>
-                )  }
+                ) : work === 'Proyect 3' ? (
+                  <Proyect3/>
+                ) : (
+                  <GithuP/>
+                ) }
            </Right>
         </Container>
     </Section>
