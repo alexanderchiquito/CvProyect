@@ -83,7 +83,7 @@ function WebDesing() {
         <Container>
           <Title>Champions</Title>
           <Despcription>Web aplication, developed with React, scss, where users can view information related to Champions of League of Legends</Despcription>
-          <Button>Click</Button>       
+          <Button href='https://github.com/alexanderchiquito/landingHeros' target='_blank' >Click</Button>       
         </Container>
     </Section>
   )

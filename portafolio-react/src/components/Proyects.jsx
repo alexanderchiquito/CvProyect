@@ -9,7 +9,7 @@ import GithuP from './GithubP';
 const data =[
   'Champion',
   'Pokemon',
-  'Proyect 3',
+  'Admin',
   'Github'
 ];
 
@@ -110,7 +110,7 @@ const Proyects = () => {
                 <WebDesing/>
                 ): work === 'Pokemon' ? (
                 <Development/>
-                ) : work === 'Proyect 3' ? (
+                ) : work === 'Admin' ? (
                   <Proyect3/>
                 ) : (
                   <GithuP/>

@@ -76,14 +76,15 @@ const Button = styled.a`
 `;
 
 
+
 function GithuP() {
   return (
     <Section>
       <Img src='./img/git_hub.png' alt='' />
         <Container>
-          <Title>The other 16... Proyects</Title>
-          <Despcription>Web aplication, developed with React, scss, where users can view information related to Champions of League of Legends</Despcription>
-          <Button>Click</Button>       
+          <Title>The other 8... Proyects</Title>
+          <Despcription>Web aplication, developed with technology Stack, where users can view information related to the Proyects</Despcription>
+          <Button href='https://github.com/alexanderchiquito' target='_blank'  >Click</Button>       
         </Container>
     </Section>
   )

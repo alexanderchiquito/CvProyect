@@ -79,11 +79,11 @@ const Button = styled.a`
 function Proyect3() {
   return (
     <Section>
-      <Img src='./img/img1.png' alt='' />
+      <Img src='./img/admin.png' alt='' />
         <Container>
-          <Title>Proyect 3</Title>
-          <Despcription>Web aplication, developed with React, scss, where users can view information related to Champions of League of Legends</Despcription>
-          <Button>Click</Button>       
+          <Title>Admin Dashboard</Title>
+          <Despcription>Web aplication UI, developed with React, scss, where admin can view information related to Users</Despcription>
+          <Button href='https://github.com/alexanderchiquito/panel-ui' target='_blank' >Click</Button>       
         </Container>
     </Section>
   )

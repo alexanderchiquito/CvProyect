@@ -83,7 +83,7 @@ function Development() {
         <Container>
           <Title>Pokemon Api</Title>
           <Despcription>Web aplication, developed with React, css, where users can view information related to Pokemons and stack</Despcription>
-          <Button>Click</Button>       
+          <Button href='https://github.com/alexanderchiquito/PokemonApi' target='_blank' >Click</Button>       
         </Container>
     </Section>
   )
