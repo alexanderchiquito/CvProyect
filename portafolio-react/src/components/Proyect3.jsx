@@ -82,7 +82,7 @@ function Proyect3() {
       <Img src='./img/admin.png' alt='' />
         <Container>
           <Title>Admin Dashboard</Title>
-          <Despcription>Web aplication UI, developed with React, scss, where admin can view information related to Users</Despcription>
+          <Despcription>Web aplication UI, developed with React, scss, typescript, where admin can view information related to Users</Despcription>
           <Button href='https://github.com/alexanderchiquito/panel-ui' target='_blank' >Click</Button>       
         </Container>
     </Section>
