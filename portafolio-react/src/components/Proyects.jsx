@@ -56,7 +56,7 @@ const ListItem = styled.li`
   position: relative;
 
   @media only screen and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 20px;
     color: white;
     -webkit-text-stroke: 0px;
   }
@@ -89,6 +89,11 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   margin-left: 100px;
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    margin-left: 50px;
+  }
 `
 
 const Proyects = () => {

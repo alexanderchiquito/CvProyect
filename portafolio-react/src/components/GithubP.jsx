@@ -14,12 +14,17 @@ const Section = styled.div`
     box-shadow: 0px 4px 8px rgba(247, 50, 230, 0.5),
     0px 6px 20px 0px rgba(243, 243, 243, 0.5)
   }
+  @media screen and (max-width: 768px) {
+    width: 400px;
+  }
   
 `;
 
 const Container = styled.div`
   align-items: center;
   margin-bottom: 20px;
+
+
 `
 
 
@@ -38,6 +43,10 @@ const Img = styled.img`
   &:hover{
     transform: scale(1.2);
   }
+  @media screen and (max-width: 768px) {
+    background-size: cover;
+  }
+
 `
 
 

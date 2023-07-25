@@ -20,10 +20,6 @@ const Container = styled.div`
 const Left = styled.div`
   flex: 1;
   
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-  
   `;
 const Title = styled.h1`
   font-size: 40px;
@@ -39,8 +35,7 @@ const Right = styled.div`
   flex:1;
   display: flex;
 
-
-  @media only screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     align-items: center;
     text-align: center;
   }
@@ -94,6 +89,15 @@ const DivItemsContent = styled.div`
       transform: ${({ direction }) => (direction === 'right' ? 'translateX(-25%)' : 'translateX(200px)')};
     }
   } 
+
+  @media screen and (max-width: 768px) {
+    gap: 150px;
+  }
+
+  @media screen and (max-width: 480px) {
+    gap: 100px;
+  }
+
 `;
 
 const DivItem = styled.div`
