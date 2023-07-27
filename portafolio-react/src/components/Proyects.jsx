@@ -34,9 +34,10 @@ const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-
+  
   @media only screen and (max-width: 768px){
     padding: 20px;
+    margin-bottom: 100px;
     justify-content: center;
   }
 `;
@@ -92,7 +93,8 @@ const Right = styled.div`
 
   @media screen and (max-width: 768px) {
     align-items: center;
-    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
   }
 `
 

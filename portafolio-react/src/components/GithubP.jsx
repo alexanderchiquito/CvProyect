@@ -15,7 +15,7 @@ const Section = styled.div`
     0px 6px 20px 0px rgba(243, 243, 243, 0.5)
   }
   @media screen and (max-width: 768px) {
-    width: 400px;
+    width: 360px;
   }
   
 `;
