@@ -5,7 +5,8 @@ import SocialMedia from "./SocialMedia";
 
 const Section = styled.div`
   height:100vh;
-  scroll-snap-align: center;
+  background-color: #303841;
+  color: #ffff;
 `
 const Container = styled.div`
   width: 100%;

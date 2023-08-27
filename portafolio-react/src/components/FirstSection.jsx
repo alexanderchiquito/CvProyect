@@ -1,93 +1,125 @@
-import React from "react";
 import { styled } from "styled-components";
 import Navbar from "./Navbar";
 
 const Section = styled.div`
   height: 100vh;
-  scroll-snap-align: center;
+  background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    height: 140vh;
+  }
 `;
 
 const Container = styled.div`
+  width: 100%;
   height: 100%;
-  scroll-snap-align: center;
   width: 1000px;
-  display: flex;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0 20px;
+  margin-top: 60px;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1000px) {
     width: 100%;
     padding-left: 20px;
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-left: 5px;
-    padding-top: 50px;
-    /* background-color: #a19191; */
   }
 
   @media screen and (max-width: 480px) {
     width: 100%;
-    /* background-color: #fc27bc; */
+  }
+`;
+
+const Section2 = styled.section`
+  position: relative;
+  padding: 0 20px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 165px;
   }
 `;
 
 const Left = styled.div`
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  @media only screen and (max-width: 768px) {
-    flex: 1;
-    align-items: center;
-    gap: 0px;
-  }
-`;
-
-const Title = styled.h1`
-  font-size: 40px;
-  margin: 10px;
+  grid-column: 1; /* Ocupar toda la columna */
+  position: relative;
+  text-align: left;
+  right: -37%;
+  padding: 0.25em 1em;
   font-family: "Concert One", cursive;
+  align-self: flex-start; /* Mover el texto hacia la izquierda */
 
-  @media only screen and (max-width: 768px) {
-    padding: 12px;
-    text-align: center;
-  }
-`;
-
-const WhatWeDo = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-const SubTitle = styled.h2`
-  color: #da4ea2;
-  font-family: "Josefin Slab", serif;
-  margin: 10px;
-`;
-
-const Desc = styled.p`
-  width: 500px;
-  font-size: 24px;
-  margin: 10px;
-  color: lightgray;
-  font-family: "Josefin Slab", serif;
   @media screen and (max-width: 768px) {
-    padding: 12px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   }
 
   @media screen and (max-width: 395px) {
     width: 100%;
-    text-align: center;
+  }
+`;
+
+const Title = styled.h1`
+  font-size: 3.8rem;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 900;
+  color: #303030;
+  margin: 0;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+`;
+
+const Title_Subtitle = styled.h1`
+  font-size: 3.8rem;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  color: #303030;
+  margin: 0;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-right: 173px;
+  }
+`;
+
+const Desc = styled.p`
+  grid-column: 1;
+  display: inline-block;
+  align-self: flex-start;
+  grid-column: -1/1;
+  grid-row: 2;
+  position: relative;
+  text-align: right;
+  background-color: rgb(170, 238, 170);
+  padding: 1em 1em;
+  /*   */
+  width: 100%;
+  font-family: "Source Code Pro", monospace;
+  @media screen and (max-width: 768px) {
+    padding: 12px;
+    width: 50%;
+    text-align: left;
+    left: 163px;
+  }
+
+  @media screen and (max-width: 395px) {
+    width: 100%;
   }
 
   /* @media screen and (max-width: 480px){
@@ -95,60 +127,24 @@ const Desc = styled.p`
   } */
 `;
 
-const Button = styled.a`
-  --bg: #c0eee4;
-  --hover-bg: #ff90e8;
-  --hover-text: #000;
-  font-family: "Concert One", cursive;
-  width: 100px;
-  padding: 0.8em 2em;
-  margin: 10px;
-  border: 1px solid var(--hover-text);
-  border-radius: 4px;
-  background: var(--hover-text);
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.2s;
-
-  &:hover {
-    color: var(--hover-text);
-    transform: translate(-0.2rem, -0.25rem);
-    background-color: var(--hover-bg);
-    box-shadow: 0.25rem 0.25rem var(--hover-text);
-  }
-  &:active {
-    transform: translate(0);
-    box-shadow: none;
-  }
-`;
-
-const Right = styled.div`
-  flex: 3;
-  position: relative;
-  @media only screen and (max-width: 768px) {
-    flex: 1;
-    width: 100%;
-  }
-`;
-
 const Img = styled.img`
   width: 250px;
-  height: 250px;
+  height: 280px;
+  grid-area: img;
   position: absolute;
+  z-index: 2;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: -50%;
   right: 0;
   margin: auto;
-  border-radius: 50%;
-  animation: animate 2s infinite ease alternate;
+  box-shadow: 0 0 5px #1a120b;
 
   @media screen and (max-width: 768px) {
-    /* width: 300px;
-    height:300px */
-    display: none;
+    position: relative;
+    left: 163px;
+    width: 400px;
+    height: 500px;
   }
 
   @keyframes animate {
@@ -163,23 +159,14 @@ const FirstSection = () => {
     <Section>
       <Navbar />
       <Container>
-        <Left>
-          <Title>Hi!</Title>
-          <Title>My Name is Alexander</Title>
-          <WhatWeDo>
-            <SubTitle>- What I do?</SubTitle>
-          </WhatWeDo>
-          <Desc>
-            Web Developer, Passionate about discovering new technologies to
-            solve your problems.
-          </Desc>
-          <Button href="https://www.linkedin.com/in/alexander-ramirez-chiquito-92a23a280/">
-            Here Me :3
-          </Button>
-        </Left>
-        <Right>
+        <Section2>
+          <Left>
+            <Title_Subtitle>Hi! I am</Title_Subtitle>
+            <Title>Alexander Ramirez</Title>
+          </Left>
+          <Desc>Web Developer</Desc>
           <Img src="./img/img.webp" />
-        </Right>
+        </Section2>
       </Container>
     </Section>
   );

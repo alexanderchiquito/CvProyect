@@ -1,4 +1,3 @@
-import React from 'react'
 import './socialMedia.css'
 
 function SocialMedia() {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { styled } from "styled-components";
 
 const data = [
@@ -15,8 +15,10 @@ const data = [
 ];
 
 const Section = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #f0f0f0;
 
   @media screen and (max-width: 1200px) {
     width: 100%;
@@ -35,15 +37,14 @@ const Section = styled.div`
   @media screen and (max-width: 480px) {
     width: 100%;
   }
-
 `;
 
 const Container = styled.div`
-  width: 1000px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 20px 20px;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -68,15 +69,14 @@ const List = styled.ul`
 const ListItem = styled.a`
   cursor: pointer;
   text-decoration: none;
-  color: #fff;
-
+  color: #111111;
 `;
 
 const Title = styled.h3`
   display: flex;
   align-items: center;
   gap: 20px;
-  font-family: "Josefin Slab", serif;
+  font-family: "Source Code Pro", monospace;
   cursor: pointer;
 
   @media only screen and (max-width: 768px) {
@@ -90,7 +90,7 @@ function Navbar() {
   return (
     <Section>
       <Container>
-        <Title>Alexander Ramírez Chiquito</Title>
+        <Title>Alex | dev</Title>
         <Links>
           <List>
             {data.map((item) => (
