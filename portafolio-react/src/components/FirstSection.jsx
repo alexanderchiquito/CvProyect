@@ -12,6 +12,10 @@ const Section = styled.div`
   @media screen and (max-width: 768px) {
     height: 140vh;
   }
+
+  @media screen and (max-width: 390px) {
+      height: 100vh;
+  }
 `;
 
 const Container = styled.div`
@@ -34,8 +38,10 @@ const Container = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    width: 100%;
+    width: 390px;
+    margin: 0 auto;
   }
+
 `;
 
 const Section2 = styled.section`
@@ -48,6 +54,7 @@ const Section2 = styled.section`
     align-items: center;
     right: 165px;
   }
+
 `;
 
 const Left = styled.div`
@@ -63,11 +70,12 @@ const Left = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
-  @media screen and (max-width: 395px) {
-    width: 100%;
+  @media screen and (max-width: 480px) {
+    width: 390px;
+    left: 124px;
+    /* margin: 0 auto; */
   }
 `;
 
@@ -118,8 +126,13 @@ const Desc = styled.p`
     left: 163px;
   }
 
-  @media screen and (max-width: 395px) {
-    width: 100%;
+  @media screen and (max-width: 480px) {
+    width: 390px;
+    padding: 12px;
+    width: 75%;
+    left: 130px;
+    top: 25px;
+    margin: 0 auto;
   }
 
   /* @media screen and (max-width: 480px){
@@ -146,6 +159,14 @@ const Img = styled.img`
     width: 400px;
     height: 500px;
   }
+  @media screen and (max-width: 480px) {
+    position: relative;
+    left: 145px;
+    top: 60px;
+    width: 370px;
+    height: 450px;
+  }
+
 
   @keyframes animate {
     to {

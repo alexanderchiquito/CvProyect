@@ -29,13 +29,15 @@ const Section = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
     padding-left: 20px;
     padding-right: 10px;
   }
 
-  @media screen and (max-width: 480px) {
-    width: 100%;
+  @media screen and (max-width: 390px) {
+    body {
+      width: 390px;
+      background-color: blue;
+    }
   }
 `;
 

@@ -10,6 +10,10 @@ const Section = styled.div`
   @media screen and (max-width: 768px) {
     height: 320vh;
   }
+
+  @media only screen and (max-width: 480px) {
+    height: 250vh;
+  }
 `;
 
 const Container = styled.div`
@@ -23,6 +27,7 @@ const Container = styled.div`
     width: 100%;
     flex-direction: column;
   }
+
 `;
 
 const Left = styled.div`
@@ -33,6 +38,7 @@ const Left = styled.div`
     margin-bottom: 100px;
     justify-content: center;
   }
+
 `;
 
 const Title = styled.h2`
@@ -59,6 +65,7 @@ const Right = styled.div`
     margin-bottom: 50px;
     margin-left: 10px;
   }
+
 `;
 
 const Card = styled.div`
@@ -103,11 +110,11 @@ const Proyects = () => {
         <Right>
           <Card>
             <CardImage src="./img/img1.png" alt="Proyecto 1" />
-            <CardTitle href="https://github.com/alexanderchiquito/landingHeros" target="_blank" >Legends click</CardTitle>
+            <CardTitle href="https://main--famous-starship-bd1458.netlify.app/" target="_blank" >Legends click</CardTitle>
           </Card>
           <Card>
             <CardImage src="./img/img2.png" alt="Proyecto 2" />
-            <CardTitle href="https://github.com/alexanderchiquito/PokemonApi" target="_blank" >Pokemon click</CardTitle>
+            <CardTitle href="https://main--wondrous-scone-1a4e39.netlify.app/" target="_blank" >Pokemon click</CardTitle>
           </Card>
           <Card>
             <CardImage src="./img/usersCrud.png" alt="Proyecto 3" />
@@ -115,7 +122,7 @@ const Proyects = () => {
           </Card>
           <Card>
             <CardImage src="./img/admin.png" alt="Proyecto 4" />
-            <CardTitle href="https://github.com/alexanderchiquito/panel-ui" target="_blank" >Admin UI click</CardTitle>
+            <CardTitle href="https://main--jolly-blini-fc5153.netlify.app/" target="_blank" >Admin UI click</CardTitle>
           </Card>
           <Card>
             <CardImage src="./img/git_hub.png" alt="Proyecto 5" />
